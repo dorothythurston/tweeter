@@ -16,9 +16,9 @@
 <body class="<%= body_class %>">
   <% if signed_in? %>
     <%= current_user.email %> |
-    <%= link_to t('application.sign_out'), sign_out_path, method: :delete %>
+    <%= link_to t('layouts.application.sign_out'), sign_out_path, method: :delete %>
   <% else %>
-    <%= link_to t('application.sign_in'), sign_in_path %>
+    <%= link_to t('layouts.application.sign_in'), sign_in_path %>
   <% end %>
   <%= render "flashes" -%>
   <%= yield %>
