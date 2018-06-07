@@ -17,3 +17,7 @@ en:
 
   titles:
     application: Tweeter
+
+  application:
+    sign_in: Sign in
+    sign_out: Sign out
