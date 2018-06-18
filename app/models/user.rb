@@ -3,4 +3,5 @@ class User < ActiveRecord::Base
   validates :password_digest, presence: true
 
   has_many :password_resets
+  has_many :tweets
 end
