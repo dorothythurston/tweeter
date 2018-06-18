@@ -22,6 +22,8 @@ gem "sprockets", ">= 3.0.0"
 gem "title"
 gem "uglifier"
 gem "bootsnap", require: false
+gem "oath"
+gem 'oath-generators'
 
 
 group :development do

@@ -1,0 +1,16 @@
+<div class="password-reset">
+  <h2><%= t('password_resets.edit.header') %></h2>
+
+  <p><%= t('password_resets.edit.instructions') %></p>
+
+  <%= form_for [@user, @password_reset] do |form| %>
+    <div class="password-field">
+      <%= form.label :password %>
+      <%= form.password_field :password, require: true %>
+    </div>
+
+    <div class="submit-field">
+      <%= form.submit t('password_resets.edit.submit') %>
+    </div>
+  <% end %>
+</div>

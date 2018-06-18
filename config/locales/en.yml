@@ -17,3 +17,36 @@ en:
 
   titles:
     application: Tweeter
+
+  sessions:
+    sign_in: Sign in
+    sign_out: Sign out
+    reset_password: Reset Password
+    failure_after_create: Bad email or password
+
+  users:
+    sign_up: Sign up
+    sign_up_errors: prevented your account from being created
+
+  activerecord:
+    attributes:
+      user:
+        password_digest: "Password"
+
+  password_resets:
+    create:
+      confirmation: You will receive an email within the next few minutes. It contains instructions for changing your password.
+    new:
+      header: Reset your password
+      instructions: To be emailed a link to reset your password, please enter your email address.
+      submit: Reset password
+    edit:
+      header: Change your password
+      instructions: Your password has been reset. Choose a new password below.
+      submit: Update password
+
+  mailers:
+    password_resets:
+      subject: Change your password
+      greeting: Someone, hopefully you, requested we send you a link to change your password
+      ignore_if: If you didn't request this, ignore this email. Your password has not been changed.
