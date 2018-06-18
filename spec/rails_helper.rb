@@ -1,5 +1,7 @@
 ENV["RACK_ENV"] = "test"
 
+require 'support/factory_bot'
+
 require File.expand_path("../../config/environment", __FILE__)
 abort("DATABASE_URL environment variable is set") if ENV["DATABASE_URL"]
 
@@ -24,4 +26,13 @@ RSpec.configure do |config|
   end
 end
 
+ Shoulda::Matchers.configure do |config|
+    config.integrate do |with|
+      # Choose a test framework:
+      with.test_framework :rspec
+      with.library :rails
+    end
+  end
+
 ActiveRecord::Migration.maintain_test_schema!
+
