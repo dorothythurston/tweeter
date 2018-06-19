@@ -18,7 +18,6 @@ en:
   titles:
     application: Tweeter
 
-  layouts:
-    application:
-      sign_in: Sign in
-      sign_out: Sign out
+  application:
+    sign_in: Sign in
+    sign_out: Sign out
